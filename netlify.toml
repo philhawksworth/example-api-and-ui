@@ -7,8 +7,3 @@
   command = "eleventy --serve --quiet"
   functions = "api"
   publish = "_site"
-
-[[redirects]]
-  from = "/api/stock/:id"
-  to = "/.netlify/functions/stock?productId=:id"
-  status = 200
