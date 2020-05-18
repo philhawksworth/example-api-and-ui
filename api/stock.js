@@ -7,7 +7,7 @@ exports.handler = (event, context, callback) => {
   let data = products[event.queryStringParameters.productId];
   let availability = inventory[event.queryStringParameters.productId];
 
-  // add the availabulity to the data passed back
+  // add the availability to the data passed back
   data.stock = availability.stock;
 
   // Introduce outrageous price gauging.
